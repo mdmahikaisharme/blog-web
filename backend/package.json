@@ -1,0 +1,35 @@
+{
+  "name": "blog-web-backend",
+  "version": "1.0.0",
+  "private": true,
+  "author": "A M M Md Mahi Kaishar",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx ./src/index.ts",
+    "build": "tsc --build",
+    "start": "node ./build/index.ts"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.2.0",
+    "@fastify/jwt": "^6.3.3",
+    "bcrypt": "^5.1.0",
+    "chalk": "^4.1.2",
+    "cookie": "^0.5.0",
+    "cors": "^2.8.5",
+    "fastify": "^4.10.0",
+    "fastify-type-provider-zod": "^1.1.7",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.5.3",
+    "zod": "^3.19.1",
+    "zod-to-json-schema": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie": "^0.5.1",
+    "@types/cors": "^2.8.12",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/mysql": "^2.15.21"
+  }
+}

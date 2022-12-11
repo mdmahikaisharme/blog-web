@@ -1,0 +1,87 @@
+.post {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  // IMAGE
+  &Img {
+    &Container {
+      flex: 2;
+      display: grid;
+      aspect-ratio: 3/2;
+      border-radius: 0.25rem;
+      overflow: hidden;
+    }
+  }
+
+  // INFO
+  &Info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &User {
+    &Img {
+      &Container {
+        width: 3rem;
+
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+    }
+    &Name {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+  &PostedAt {
+    font-size: 0.9rem;
+  }
+
+  &Action {
+    &Container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    width: 2rem;
+    aspect-ratio: 1/1;
+    font-size: 0.8rem;
+    display: grid;
+    place-items: center;
+    border-width: 0.15rem;
+    border-radius: 50%;
+    transition: background-color 200ms ease, color 200ms ease;
+
+    &Edit {
+      background-color: green;
+      border-color: green;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: green;
+      }
+    }
+    &Delete {
+      background-color: red;
+      border-color: red;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: red;
+      }
+    }
+  }
+
+  // TEXT
+  &Title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  // &Content {
+
+  // }
+}

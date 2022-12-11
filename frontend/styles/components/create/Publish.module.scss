@@ -1,0 +1,57 @@
+.publish {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 0.2rem solid #777;
+  border-radius: 0.25rem;
+
+  &Title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &Content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  label {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &Action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &Darft,
+  &Upload {
+    padding: 0.25rem 0.5rem;
+    border: 0.2rem solid teal;
+    border-radius: 0.25rem;
+    transition: background-color 200ms ease, color 200ms ease;
+  }
+  &Darft {
+    color: teal;
+
+    &:hover,
+    &:active {
+      background-color: teal;
+      color: white;
+    }
+  }
+  &Upload {
+    color: white;
+    background-color: teal;
+
+    &:hover,
+    &:active {
+      background-color: white;
+      color: teal;
+    }
+  }
+}

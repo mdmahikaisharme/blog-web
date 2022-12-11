@@ -1,0 +1,50 @@
+.suggestion {
+  &Title {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &Content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &Img {
+    &Container {
+      aspect-ratio: 3/2;
+      display: grid;
+      border-radius: 0.25rem;
+      overflow: hidden;
+    }
+  }
+
+  &Title {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &Read {
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: teal;
+    border: 0.2rem solid teal;
+    border-radius: 0.25rem;
+    transition: background-color 200ms ease, color 200ms ease;
+
+    &:hover {
+      background-color: teal;
+      color: white;
+    }
+  }
+}

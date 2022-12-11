@@ -1,0 +1,36 @@
+.create {
+  &Page {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  &Input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 0.2rem solid #777;
+    border-radius: 0.25rem;
+    transition: border-color 200ms ease;
+
+    &:focus-within {
+      border-color: teal;
+    }
+  }
+
+  &Left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  &Right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.editor {
+  min-height: 50vh;
+}

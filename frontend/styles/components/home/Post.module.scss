@@ -1,0 +1,65 @@
+.post {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    .postImgContainer::before {
+      left: 1rem;
+    }
+  }
+
+  &Text {
+    &Container {
+      flex: 3;
+    }
+  }
+  &Title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &Content {
+    margin-top: 1rem;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+  }
+  &Read {
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    display: flex;
+    font-weight: 500;
+    color: teal;
+    border: 0.2rem solid teal;
+    border-radius: 0.25rem;
+    transition: background-color 200ms ease, color 200ms ease;
+
+    &:hover {
+      background-color: teal;
+      color: white;
+    }
+  }
+
+  &Img {
+    &Container {
+      flex: 2;
+      max-height: 500px;
+      display: grid;
+      aspect-ratio: 2/2;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -1rem;
+        top: 1rem;
+        background-color: teal;
+        z-index: -1;
+      }
+    }
+  }
+}

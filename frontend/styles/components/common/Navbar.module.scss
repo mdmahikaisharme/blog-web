@@ -1,0 +1,62 @@
+.nav {
+  &Bar {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &Menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &Item {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.75;
+    border-radius: 0.25rem;
+    transition: background-color 200ms ease, color 200ms ease;
+
+    &:hover {
+      background-color: teal;
+      color: white;
+    }
+  }
+
+  &Action {
+    &Container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &Item {
+      padding: 0.25rem 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      border: 0.25rem solid transparent;
+      transition: background-color 200ms ease, color 200ms ease,
+        border-color 200ms ease;
+
+      &:hover {
+        background-color: teal;
+        color: white;
+      }
+    }
+
+    &Write {
+      background-color: teal;
+      border-color: teal;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: teal;
+      }
+    }
+  }
+}
